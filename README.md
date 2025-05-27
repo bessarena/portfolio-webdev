@@ -4,7 +4,7 @@ This is my personal web developer portfolio. It may look simple now, but it repr
 
 > My goal is to build a solid foundation and keep evolving it over time — adding new skills, improving the design, and modernizing it as I grow as a developer.
 
-🔗 [View online](https://yourusername.github.io/your-repo)
+🔗 [View online](bessaportfolio.netlify.app)
 
 ## 🛠️ Technologies
 - HTML5
