@@ -83,6 +83,10 @@
     margin: 0;
   }
 
+  .contact-info-container {
+    padding: 0 1rem;
+  }
+
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;

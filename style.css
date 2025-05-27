@@ -184,7 +184,7 @@ nav a:hover {
 
 section {
   padding-top: 4vh;
-  min-height: 100vh;
+  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
