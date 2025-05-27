@@ -90,7 +90,6 @@ nav li:last-child {
 a {
   color: var(--secondary-color);
   text-decoration: none;
-  text-decoration-color: var(--primary-color);
 }
 
 a:hover {
@@ -185,7 +184,7 @@ nav a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  min-height: 100vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -299,10 +298,6 @@ section {
   background: var(--secondary-color);
 }
 
-.btn-container {
-  gap: 1rem;
-}
-
 /* ABOUT */
 
 #about {
@@ -387,7 +382,7 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: stretch;
   gap: 0.5rem;
 }
 
