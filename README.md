@@ -6,7 +6,7 @@ This is my personal web developer portfolio. It may look simple now, but it repr
 
 🔗 [View online](https://bessaportfolio.netlify.app)
 
-🖼️ ![Website PrintScreen](./assets/preview.png)
+![Website PrintScreen](./assets/preview.png)
 
 
 ## 🛠️ Technologies
