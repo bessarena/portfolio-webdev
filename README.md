@@ -1,4 +1,4 @@
-# Porfolio Web - Diogo Bessa
+# Portfolio Web - Diogo Bessa
 
 This is my personal web developer portfolio. It may look simple now, but it represents the beginning of my journey.
 
