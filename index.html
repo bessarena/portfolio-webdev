@@ -1,409 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Diogo Bessa, a web developer specializing in frontend development and modern web technologies.">
+  <meta name="description"
+    content="Técnico de multimédia focado em fotografia, vídeo e comunicação visual para conteúdos digitais e institucionais.">
   <meta name="author" content="Diogo Bessa">
-  <meta name="keywords" content="web developer, frontend developer, portfolio, javascript, html, css">
-  <meta property="og:title" content="Diogo Bessa | Web Developer Portfolio">
-  <meta property="og:description" content="Portfolio of Diogo Bessa showcasing web development projects and skills.">
+  <meta name="keywords"
+    content="multimédia, fotografia, vídeo, design gráfico, comunicação visual, edição de vídeo, motion design, conteúdo digital, portfólio">
+  <meta property="og:title" content="Diogo Bessa | Fotografia - Video - Design">
+  <meta property="og:description"
+    content="Técnico de multimédia focado em fotografia, vídeo e comunicação visual para conteúdos digitais e institucionais.">
   <meta property="og:image" content="https://diogobessa.pt/assets/preview.png">
   <meta property="og:url" content="https://diogobessa.pt">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Diogo Bessa | Web Developer Portfolio">
-  <meta name="twitter:description" content="Portfolio of Diogo Bessa showcasing projects and skills.">
+  <meta name="twitter:title" content="Diogo Bessa | Fotografia - Video - Design">
+  <meta name="twitter:description"
+    content="Técnico de multimédia focado em fotografia, vídeo e comunicação visual para conteúdos digitais e institucionais.">
   <meta name="twitter:image" content="https://diogobessa.pt/assets/preview.png">
   <meta name="theme-color" content="#ffffff">
   <!-- Title -->
-  <title>Diogo Bessa | Web Developer</title>
+  <title>Diogo Bessa | Fotografia - Video - Design</title>
   <!-- Favicon -->
   <link rel="icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal@4"></script>
   <script>ScrollReveal({ duration: 1000 })</script>
 </head>
-  <nav id="desktop-nav">
-    <div class="logo">Diogo Bessa</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about" class="hvr-underline-from-left">About</a></li>
-        <li><a href="#experience" class="hvr-underline-from-left">Experience</a></li>
-        <li><a href="#projects" class="hvr-underline-from-left">Projects</a></li>
-        <li><a href="#contact" class="hvr-underline-from-left">Contact</a></li>
-        <li><img
-          id="modeToggle"
-          class="icon color-icon"
-          src="./assets/theme_light.png"
-          src-light="./assets/theme_light.png"
-          src-dark="./assets/theme_dark.png" 
-          alt="Theme Light Icon"
-          >
-        </li>
-      </ul>
+<nav id="desktop-nav">
+  <div class="logo">Diogo Bessa</div>
+  <div>
+    <ul class="nav-links">
+      <li><a href="#about" class="hvr-underline-from-left">Sobre</a></li>
+      <li><a href="#experience" class="hvr-underline-from-left">Skills</a></li>
+      <li><a href="#projects" class="hvr-underline-from-left">Projetos</a></li>
+      <li><a href="#contact" class="hvr-underline-from-left">Contacto</a></li>
+      <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png"
+          src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Theme Light Icon">
+      </li>
+    </ul>
+  </div>
+</nav>
+<nav id="hamburger-nav">
+  <div class="logo">Diogo Bessa</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Diogo Bessa</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        <li><img
-          id="modeToggle2"
-          class="icon color-icon"
-          src="./assets/theme_light.png"
-          src-light="./assets/theme_light.png"
-          src-dark="./assets/theme_dark.png" 
-          alt="Theme Light Icon">
-        </li>
-      </div>
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+      <li><img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png"
+          src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Theme Light Icon">
+      </li>
     </div>
-  </nav>
-  <section id="profile">
+  </div>
+</nav>
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="assets/profile.jpg" alt="Diogo Bessa profile picture" class="profile-pic headline">
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1 tagline"> Olá, eu sou o</p>
+    <h1 class="title punchline">Diogo Bessa</h1>
+    <p class="section__text__p2 tagline">Técnico de Multimédia</p>
+    <div class="btn-container">
+      <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">Contacto Info
+      </button>
+    </div>
+    <div id="socials-container">
+      <a href="https://www.linkedin.com/in/diogombessa/" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+          src-dark="./assets/linkedin_dark.png" alt="My LinkedIn Profile" class="icon linkedin-icon">
+      </a>
+      <a href="https://www.github.com/bessarena/" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/github_light.png" src-light="./assets/github_light.png" src-dark="./assets/github_dark.png"
+          alt="My github Profile" class="icon github-icon">
+      </a>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <p class="section__text__p1">Fica a saber mais sobre mim</p>
+  <h1 class="title">Sobre Mim</h1>
+  <div class="section-container">
     <div class="section__pic-container">
-      <img src="assets/profile.jpg" alt="Diogo Bessa profile picture" class="profile-pic headline">
+      <img src="assets/about-pic.jpg" alt="Profile picture of Diogo Bessa" class="about-pic">
     </div>
-    <div class="section__text">
-      <p class="section__text__p1 tagline"> Hello, I'm</p>
-      <h1 class="title punchline">Diogo Bessa</h1>
-      <p class="section__text__p2 tagline">Frontend Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <a href="https://www.linkedin.com/in/diogombessa/" target="_blank" rel="noopener noreferrer">
-        <img 
-        src="./assets/linkedin_light.png"
-        src-light="./assets/linkedin_light.png"
-        src-dark="./assets/linkedin_dark.png" 
-        alt="My LinkedIn Profile" 
-        class="icon linkedin-icon">
-        </a>
-        <a href="https://www.github.com/bessarena/" target="_blank" rel="noopener noreferrer">
-        <img 
-        src="./assets/github_light.png"
-        src-light="./assets/github_light.png"
-        src-dark="./assets/github_dark.png" 
-        alt="My github Profile" 
-        class="icon github-icon">
-        </a>
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="assets/about-pic.jpg" alt="Profile picture of Diogo Bessa" class="about-pic">
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container hvr-float-shadow">
-            <img 
-            src="assets/experience_light.png"
-            src-light="./assets/experience_light.png"
-            src-dark="./assets/experience_dark.png"
-            alt="Experience Icon" 
-            class="icon">
-            <h3>Experience</h3>
-            <p>2+ years <br>Frontend Development</p>
-          </div>
-          <div class="details-container hvr-float-shadow">
-            <img 
-            src="assets/education_light.png"
-            src-light="./assets/education_light.png"
-            src-dark="./assets/education_dark.png" 
-            alt="Education Icon" 
-            class="icon">
-            <h3>Education</h3>
-            <p>Web Technologies and Information Systems at ESMAD</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos cupiditate tenetur exercitationem, iste pariatur provident ut, harum natus eveniet reiciendis explicabo. Voluptas molestiae, beatae praesentium nisi dicta aliquam laborum alias ex voluptatum eius doloremque, est officiis voluptatem eos dolores. Est neque magnam quod exercitationem, modi incidunt autem ex odit.</p>
-        </div>
-      </div>
-    </div>
-    <img 
-    src="assets/arrow_light.png"
-    src-light="./assets/arrow_light.png"
-    src-dark="./assets/arrow_dark.png" 
-    alt="Arrow Icon Scroll Down Arrow" 
-    class="icon arrow" 
-    onclick="location.href='./#experience'">
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
+    <div class="about-details-container">
       <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img 
-              src="/assets/checkmark_light.png"
-              src-light="./assets/checkmark_light.png"
-              src-dark="./assets/checkmark_dark.png" 
-              alt="Experience Icon in HTML" 
-              class="icon">
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-              src="/assets/checkmark_light.png"
-              src-light="./assets/checkmark_light.png"
-              src-dark="./assets/checkmark_dark.png" 
-              alt="Experience Icon in CSS" 
-              class="icon">
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-              src="/assets/checkmark_light.png"
-              src-light="./assets/checkmark_light.png"
-              src-dark="./assets/checkmark_dark.png" 
-              alt="Experience Icon in JavaScript" 
-              class="icon">
-              <div>
-                <h3>JavaScript</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-              src="/assets/checkmark_light.png" 
-              src-light="./assets/checkmark_light.png"
-              src-dark="./assets/checkmark_dark.png"
-              alt="Experience Icon in SASS" 
-              class="icon">
-              <div>
-                <h3>SASS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img 
-              src="/assets/checkmark_light.png" 
-              src-light="./assets/checkmark_light.png"
-              src-dark="./assets/checkmark_dark.png"
-              alt="Experience Icon in TypeScript" 
-              class="icon">
-              <div>
-                <h3>TypeScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img 
-              src="/assets/checkmark_light.png"
-              src-light="./assets/checkmark_light.png"
-              src-dark="./assets/checkmark_dark.png" 
-              alt="Experience Icon in Material UI" 
-              class="icon">
-              <div>
-                <h3>Material UI</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-          </div>
+        <div class="details-container hvr-float-shadow">
+          <img src="assets/experience_light.png" src-light="./assets/experience_light.png"
+            src-dark="./assets/experience_dark.png" alt="Experience Icon" class="icon">
+          <h3>Experiência</h3>
+          <p>+2 anos <br>Editor de Vídeo e Fotógrafo de Casamentos</p>
         </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img 
-              src="/assets/checkmark_light.png"
-              src-light="./assets/checkmark_light.png"
-              src-dark="./assets/checkmark_dark.png" 
-              alt="Experience Icon in HTML" 
-              class="icon">
-              <div>
-                <h3>PostgreSQL</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img 
-              src="/assets/checkmark_light.png"
-              src-light="./assets/checkmark_light.png"
-              src-dark="./assets/checkmark_dark.png" 
-              alt="Experience Icon in CSS" 
-              class="icon">
-              <div>
-                <h3>NodeJS</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img 
-              src="/assets/checkmark_light.png" 
-              src-light="./assets/checkmark_light.png"
-              src-dark="./assets/checkmark_dark.png"
-              alt="Experience Icon in JavaScript" class="icon">
-              <div>
-                <h3>Express JS</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img 
-              src="/assets/checkmark_light.png" 
-              src-light="./assets/checkmark_light.png"
-              src-dark="./assets/checkmark_dark.png"
-              alt="Experience Icon in SASS" 
-              class="icon">
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
+        <div class="details-container hvr-float-shadow">
+          <img src="assets/education_light.png" src-light="./assets/education_light.png"
+            src-dark="./assets/education_dark.png" alt="Education Icon" class="icon">
+          <h3>Educação</h3>
+          <p>Tecnologias Web e Sistemas de Informação na ESMAD</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>Sou um técnico de multimédia focado em fotografia, vídeo, design gráfico e comunicação visual para
+          plataformas digitais. Tenho interesse na criação de conteúdos modernos e funcionais, combinando estética,
+          storytelling e experiência digital para desenvolver projetos visuais com identidade e impacto.</p>
+      </div>
+    </div>
+  </div>
+  <img src="assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+    alt="Arrow Icon Scroll Down Arrow" class="icon arrow" onclick="location.href='./#experience'">
+</section>
+<section id="experience">
+  <p class="section__text__p1">Explora as Minhas</p>
+  <h1 class="title">Skills</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Fotografia e Vídeo</h2>
+        <div class="article-container">
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in HTML" class="icon">
+            <div>
+              <h3>Adobe Lightroom</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in CSS" class="icon">
+            <div>
+              <h3>Adobe Photoshop</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in JavaScript" class="icon">
+            <div>
+              <h3>Adobe Premiere Pro</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in SASS" class="icon">
+            <div>
+              <h3>DaVinci Resolve</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in TypeScript" class="icon">
+            <div>
+              <h3>CapCut</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in Material UI" class="icon">
+            <div>
+              <h3>Material UI</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">Design e Digital</h2>
+        <div class="article-container">
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in HTML" class="icon">
+            <div>
+              <h3>Adobe Illustrator</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in CSS" class="icon">
+            <div>
+              <h3>Adobe InDesign</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in JavaScript" class="icon">
+            <div>
+              <h3>Figma</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in SASS" class="icon">
+            <div>
+              <h3>Canva</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in SASS" class="icon">
+            <div>
+              <h3>HTML</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in SASS" class="icon">
+            <div>
+              <h3>CSS</h3>
+            </div>
+          </article>
+          <article>
+            <img src="/assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+              src-dark="./assets/checkmark_dark.png" alt="Experience Icon in SASS" class="icon">
+            <div>
+              <h3>JavaScript</h3>
+            </div>
+          </article>
         </div>
       </div>
     </div>
-    <img 
-    src="assets/arrow_light.png"
-    src-light="./assets/arrow_light.png"
-    src-dark="./assets/arrow_dark.png" 
-    alt="Arrow Icon Scroll Down Arrow" 
-    class="icon arrow" 
-    onclick="location.href='./#projects'">
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="assets/project-1.png" alt="Project 1 Screenshot" class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
-            <button 
-              class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/bessarena/dom-cortes-barbershop'">
-              Github
-            </button>
-            <button 
-              class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://barbearia-dom-cortez.netlify.app/'">
-              Live Demo
-            </button>
-          </div>
+  </div>
+  <img src="assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+    alt="Arrow Icon Scroll Down Arrow" class="icon arrow" onclick="location.href='./#projects'">
+</section>
+<section id="projects">
+  <p class="section__text__p1">Explora os meus projetos recentes</p>
+  <h1 class="title">Projetos</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="assets/project-1.png" alt="Project 1 Screenshot" class="project-img">
         </div>
-        <div class="details-container color-container">
-          <div class="aricle-container">
-            <img src="assets/project-2.png" alt="Project 2 Screenshot" class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
-          <div class="btn-container">
-            <button 
-              class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/bessarena/bessarena.github.io'">
-              Github
-            </button>
-            <button 
-              class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://bessarena.github.io/'">
-              Live Demo
-            </button>
-          </div>
+        <h2 class="experience-sub-title project-title">Project One</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/bessarena/dom-cortes-barbershop'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://barbearia-dom-cortez.netlify.app/'">
+            Live Demo
+          </button>
         </div>
-        <div class="details-container color-container">
-          <div class="aricle-container">
-            <img src="assets/project-3.png" alt="Project 3 Screenshot" class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button 
-              class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/bessarena/bessarena.github.io'">
-              Github
-            </button>
-            <button 
-              class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://bessarena.github.io/'">
-              Live Demo
-            </button>
-          </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="aricle-container">
+          <img src="assets/project-2.png" alt="Project 2 Screenshot" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/bessarena/bessarena.github.io'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://bessarena.github.io/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="aricle-container">
+          <img src="assets/project-3.png" alt="Project 3 Screenshot" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Three</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/bessarena/bessarena.github.io'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://bessarena.github.io/'">
+            Live Demo
+          </button>
         </div>
       </div>
     </div>
-    <img 
-    src="assets/arrow_light.png"
-    src-light="./assets/arrow_light.png"
-    src-dark="./assets/arrow_dark.png" 
-    alt="Arrow Icon Scroll Down" 
-    class="icon arrow" 
-    onclick="location.href='./#contact'">
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get In Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img 
-        src="assets/email_light.png" 
-        src-light="./assets/email_light.png"
-        src-dark="./assets/email_dark.png"
-        alt="Email Icon"
-        class="icon contact-icon email-icon"
-        >
-        <p><a href="mailto:diogomoubessa@gmail.com">Send a E-mail </a></p>
-      </div>
-      <div class="contact-info-container">
-        <img 
-        src="./assets/linkedin_light.png"
-        src-light="./assets/linkedin_light.png"
-        src-dark="./assets/linkedin_dark.png" 
-        alt="My LinkedIn Profile" 
-        class="icon linkedin-icon">
-        <p><a href="https://www.linkedin.com/in/diogombessa/">LinkedIn</a></p>
-      </div>
+  </div>
+  <img src="assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+    alt="Arrow Icon Scroll Down" class="icon arrow" onclick="location.href='./#contact'">
+</section>
+<section id="contact">
+  <p class="section__text__p1">Get In Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="assets/email_light.png" src-light="./assets/email_light.png" src-dark="./assets/email_dark.png"
+        alt="Email Icon" class="icon contact-icon email-icon">
+      <p><a href="mailto:diogomoubessa@gmail.com">Send a E-mail </a></p>
     </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <div class="contact-info-container">
+      <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+        src-dark="./assets/linkedin_dark.png" alt="My LinkedIn Profile" class="icon linkedin-icon">
+      <p><a href="https://www.linkedin.com/in/diogombessa/">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contacto</a></li>
       </ul>
-      </div>
-    </nav>
-    <p>Copyright &#169; 2025 Diogo Bessa. All Rights Reserved</p>
-  </footer>
-  <script src="script.js"></script>
-  	<script>
-		ScrollReveal().reveal('.headline')
-		ScrollReveal().reveal('.tagline', { delay: 200 })
-		ScrollReveal().reveal('.punchline', { delay: 400 })
-	</script>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2026 Diogo Bessa. All Rights Reserved</p>
+</footer>
+<script src="script.js"></script>
+<script>
+  ScrollReveal().reveal('.headline')
+  ScrollReveal().reveal('.tagline', { delay: 200 })
+  ScrollReveal().reveal('.punchline', { delay: 400 })
+</script>
 </body>
+
 </html>
